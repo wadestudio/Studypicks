@@ -12,3 +12,10 @@
 - [Tailwind CSS](https://tailwindcss.com/)
 - [WADE Web Framework](https://github.com/wadestudio/wade-webframework)
 
+<br>
+<br>
+
+### 🎁 특별히 이분들께 감사드려요!
+Studypicks이 성공적으로 제작될 수 있도록, 지원, 후원, 투자 해주신분들 이에요.
+
+- 이런 아직 그런분은 없는걸요... [첫 지원자가 되시는건 어때요?](https://toss.me/wadestudio)
