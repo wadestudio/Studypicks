@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    background-color: rgb(240, 240, 240);
+}
+
+*{
+    user-select: none;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+main{
+    padding: 90px 6%;
+}
+
+/* global */
+.info{
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: #aaa;
+    font-size: 12px;
+}
+
+.btn-blue{
+    display: block;
+    background-color: rgb(0, 128, 255);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.app-title{
+    margin-top: 50px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* start page */
+.app-start{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+    gap: 15px;
+}
+
+.app-start .title{
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.app-start .login{
+    display: flex;
+    padding: 13px;
+    border-radius: 10px;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.app-start .login img{
+    width: 1.25rem;
+}
+
+.app-start .login.kakao-login{
+    background-color: #fee500;
+}
+
+.app-start .bottom{
+    bottom: 0;
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 0.8rem;
+}
+
+.app-start form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.app-start form input{
+    background-color: transparent;
+    outline: none;
+    border-bottom: solid 0.125rem rgb(106, 155, 235);
+    font-size: 20px;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.app-start form div.input input:focus{
+    border-bottom-color: rgb(59, 130, 246);
+}
+
+.app-start form div.input{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.app-start form div.input p.info{
+    transition: 0.3s;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.app-start form div.input input:focus + p.info{
+    color: rgb(59, 130, 246);
+}
