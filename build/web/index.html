@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/9e7d15e18a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <wade-head>
+        <wade-import name="app-home" src="./page/home.html"></wade-import>
+        <wade-import name="app-start" src="./page/start/start.html"></wade-import>
+        <wade-import name="app-start-email" src="./page/start/start-email.html"></wade-import>
+        <wade-import name="app-start-school" src="./page/start/start-school.html"></wade-import>
+    </wade-head>
+
+    <wade-app lang="ko">
+        <wade-routes>
+            <!-- home -->
+            <wade-route path="/index.html">
+                <app-start></app-start>
+            </wade-route>
+
+            <!-- start-page -->
+            <wade-route path="/start">
+                <app-start></app-start>
+            </wade-route>
+            <wade-route path="/start-email">
+                <app-start-email></app-start-email>
+            </wade-route>
+            <wade-route path="/start-school">
+                <app-start-school></app-start-school>
+            </wade-route>
+
+        </wade-routes>
+    </wade-app>
+    
+    <script src="https://cdn.jsdelivr.net/gh/wadestudio/wade-webframework@0.2.0/dist/wade.js"></script>
+</body>
+</html>
