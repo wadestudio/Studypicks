@@ -7,10 +7,32 @@
 <br>
 <br>
 
-### 📦 사용 프레임워크, 라이브러리
+### 📦 사용 프레임워크, 라이브러리, 기술
 
+- [PWA](https://developer.mozilla.org/ko/docs/Web/Progressive_web_apps/Introduction)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [WADE Web Framework](https://github.com/wadestudio/wade-webframework)
+
+<br>
+<br>
+
+### 🛠 개발자
+
+<hr>
+
+### **Minjun Lee**
+##### Front-End Technical Lead, Senior Software Engineer - WEB, Mobile (Android)
+- [Github](https://github.com/dev-yuka05)
+- [Instagram](https://www.instagram.com/min_juun05)
+
+<hr>
+
+### **Jihwan Eom**
+##### Data Management Specialist, Senior Software Engineer - WEB
+- [Github](https://github.com/Bainble0211)
+- [Instagram](https://www.instagram.com/snakeblanket)
+
+<hr>
 
 <br>
 <br>
