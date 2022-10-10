@@ -1,0 +1,49 @@
+<template name="app-toolbar-back">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .toolbar{
+            display: flex;
+            width: 100%;
+            padding: 18px 6%;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            background-color: #fff;
+            border-bottom: solid 0.025rem #d1d5db;
+        }
+        .util{
+            color: #374151;
+            text-decoration: none;
+            width: 20px;
+        }
+        .back{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+            height: 1.25rem;
+        }
+        .back::before {
+            font: var(--fa-font-solid);
+            content: "\f053";
+        }
+        p{
+            margin: 0;
+            font-weight: 500;
+            font-size: 18px;
+            color: #6d7684;
+        }
+        .back:hover {
+            background-color: #d1d5db;
+            border-radius: 50px;
+        }
+        
+    </style>
+    <div class="toolbar">
+        <wade-link class="back util" href="{{src}}"></wade-link>
+        <p>{{title}}</p>
+        <p class="util"></p>
+    </div>
+</template>

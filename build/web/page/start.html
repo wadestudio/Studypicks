@@ -1,0 +1,136 @@
+<template name="app-start">
+    <style>
+        .app{
+            height: 100vh;
+            max-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 10%;
+            gap: 15px;
+            touch-action: pan-x;
+        }
+
+        .app .title{
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .app .login{
+            display: flex;
+            padding: 13px;
+            border-radius: 10px;
+            justify-content: center;
+            gap: 10px;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #64748b;
+            transition: .1s ease;
+            text-decoration: none;
+        }
+
+        .app .login img{
+            width: 1.25rem;
+        }
+
+        .app .login.kakao-login{
+            color: #374151;
+            background-color: #fee500;
+        }
+        .app .login.kakao-login:hover{
+            background: #fffada;
+        }
+
+        .app .bottom{
+            bottom: 0;
+            display: block;
+            text-align: center;
+            text-decoration: underline;
+            font-size: 0.8rem;
+            color: #64748b;
+        }
+
+        .app .email{
+            background: #e5e7eb;
+            color: #334155;
+        }
+        .app .email:hover{
+            background: #cbd5e1;
+        }
+ 
+    </style>
+    <div class="app">
+        <p class="title"> <span>스터디픽</span>에<br> 오신것을 환영해요!</p>
+        <wade-link class="login email" href="./signup">
+            회원가입
+        </wade-link>
+        <a class="login kakao-login" href="https://kakao.com">
+            <img src="../assets/kakao.svg">
+            카카오 로그인
+        </a>
+        <a href="" class="bottom">이미 계정이 있어요!</a>
+    </div>
+</template>
+
+<template name="app-start-signup">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+         .app{
+            height: 100vh;
+            max-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 6%;
+            gap: 15px;
+            touch-action: pan-x;
+        }
+
+        .app .title{
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        input{
+            width: 100%;
+        }
+
+        .next{
+            bottom: 0;
+            left: 0;
+            position: fixed;
+            width: 100%;
+            padding: 2rem 6%;
+        }
+
+        .next input[type="submit"]{
+            background-color: #3b82f6;
+            color: #fff;
+            border: none;
+            outline: none;
+            padding: 1rem;
+            font-size: 16px;
+            border-radius: 1rem;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+        .next input[type="submit"]:hover{
+            color: #d1d5db;
+            background-color: #2563eb;
+        }
+    </style>
+    <app-toolbar-back title="회원가입" src="/start"></app-toolbar-back>
+    <div class="app">
+        <form action="/start">
+            <input type="text">
+            <div class="next">
+                <input type="submit" value="다음">
+            </div>
+        </form>
+    </div>
+</template>
